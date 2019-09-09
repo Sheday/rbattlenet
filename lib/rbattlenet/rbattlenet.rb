@@ -35,7 +35,7 @@ module RBattlenet
 
   #Set Access Token for requests. Required
   def self.authenticate(client_id:, client_secret:)
-    response = HTTParty.post("https://us.battle.net/oauth/token",
+    response = HTTParty.post("https://eu.battle.net/oauth/token",
       basic_auth: {
         username: client_id,
         password: client_secret,
