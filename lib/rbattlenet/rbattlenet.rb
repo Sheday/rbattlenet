@@ -27,6 +27,7 @@ require_relative "./sc2/data_resources.rb"
 
 #Error-handling
 require_relative "./errors/invalid_input.rb"
+require_relative "./errors/unauthorized.rb"
 require_relative "./errors/error.rb"
 
 module RBattlenet
