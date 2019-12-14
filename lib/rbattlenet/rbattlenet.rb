@@ -44,6 +44,8 @@ module RBattlenet
         grant_type: :client_credentials
       }
     )
+    raise RBattlenet::Errors::Unauthorized if response.code == 401
+
     @@token = response['access_token']
     @@queries = "?locale=#{@@locale}&access_token=#{@@token}"
     return true
